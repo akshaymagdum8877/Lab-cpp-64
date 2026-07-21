@@ -1,13 +1,13 @@
 #include<iostream>
-using namespace std;
+//using namespace std;
 int main()
 {
     int num1,num2,sum,avg;
-    cout<<"enter two numbers";
-    cin>>num1;
-    cin>>num2;
+    std::cout<<"enter two numbers";
+    std::cin>>num1;
+    std::cin>>num2;
     sum=num1+num2;
     avg=sum/2;
-    cout<<"sum of two numbers="<<sum<<"average="<<avg;
+    std::cout<<"sum of two numbers="<<sum<<"average="<<avg;
     return 0;
 }
