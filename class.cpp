@@ -21,6 +21,7 @@ int item::getdata(int a,float b)
     return 0;
 }
 int main()
+
 {
    
      item x;
@@ -32,6 +33,12 @@ int main()
     cout<<"object y"<<"\n";
     x.getdata(25,66.6);
     x.putdata();
+    return 0;
+
+}
+int getdata()
+{
+    cout<<"not part of class";
     return 0;
 
 }
