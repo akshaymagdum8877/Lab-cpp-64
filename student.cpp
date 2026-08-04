@@ -2,12 +2,13 @@
 #include<string>
 using namespace std;
 class student{
-    private:
+    public:
     string name;
     int rollno;
     float marks;
 
     public:
+    
     void inputdetails()
     {
         cout<<"enter student name:";
@@ -22,7 +23,7 @@ class student{
     const{
         cout<<"\n----student details----\n";
         cout<<"name:"<<name<<endl;
-        cout<<"roll no.:;"<<rollno<<endl;
+        cout<<"roll no.:"<<rollno<<endl;
         cout<<"marks:"<<marks<<endl;
     }
 };
@@ -30,6 +31,7 @@ int main()
 {
     student s;
     s.inputdetails();
+    s.rollno=100;
     s.displaydetails();
     return 0;
 
