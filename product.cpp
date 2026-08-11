@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-
 class Product
 {
+    private:
     string productName;
     int productId;
     int quantity;
@@ -13,13 +13,10 @@ public:
     {
         cout << "Enter Product Name: ";
         cin >> productName;
-
         cout << "Enter Product ID: ";
         cin >> productId;
-
         cout << "Enter Quantity: ";
         cin >> quantity;
-
         cout << "Enter Price: ";
         cin >> price;
     }
@@ -36,10 +33,8 @@ public:
 
 int main()
 {
-    Product p;
-
-    p.getdata();
-    p.putdata();
-
+    Product a;
+    a.getdata();
+    a.putdata();
     return 0;
 }
