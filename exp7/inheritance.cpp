@@ -5,7 +5,7 @@ class student
 {
     int roll;
     char name[25];
-    public:
+    protected:
     void getdata()
     {
         cout<<"\n-------------------------";
@@ -23,12 +23,12 @@ class student
         cout<<"\n student name:"<<name<<endl;
     }
 };
-class studentexam: public student
+class studentexam: protected student
 {
-    public:
+ protected:
     int sub1,sub2,sub3,sub4,sub5,sub6;
     float per;
-    public:
+ protected:
     void accept_data()
     {
         getdata();
@@ -56,10 +56,10 @@ class studentexam: public student
         cout<<"\n marks of subject 6;"<<sub6;
     }
 };
-class studentresult: public studentexam
+class studentresult: protected studentexam
 
 {
-    public:
+ public:
     void calculate()
     {
         per=(sub1+sub2+sub3+sub4+sub5+sub6)/6.0;

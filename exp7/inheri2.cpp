@@ -2,7 +2,7 @@
 using namespace std;
 class vehicle
 {
-    public:
+    protected:
     vehicle()
     {
         cout<<"this is a vehicle\n";
@@ -10,7 +10,7 @@ class vehicle
     
 };
 
-class car : public vehicle{
+class car : protected vehicle{
     public:
     car()
     {
@@ -18,7 +18,7 @@ class car : public vehicle{
     }
 };
 
-class bus: public vehicle{
+class bus: protected vehicle{
     public:
     bus()
     {
